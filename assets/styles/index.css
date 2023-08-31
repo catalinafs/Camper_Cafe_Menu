@@ -1,0 +1,115 @@
+:root {
+    --Black: #313131;
+    --Grey: #4D4D4D;
+    --Coffee: #deb887;
+    --Brown: #AF5B36;
+}
+
+@font-face {
+    font-family: 'Mochiy Pop P One';
+    src: url(../fonts/MochiyPopPOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--Black);
+    font-family: 'Mochiy Pop P One', Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/coffee.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 40%;
+    /* min-width: 20%; */
+    padding: 10px 40px;
+    gap: 15px;
+    background-color: var(--Coffee);
+    border-radius: 25px;
+    opacity: 92%;
+}
+
+.Coffee_Desserts {
+    width: 100%;
+    text-align: center;
+}
+
+.Coffee_Desserts hr {
+    border: none;
+    height: 4px;
+    background-color: var(--Brown);
+    border-radius: 4px;
+}
+
+.Coffee_Desserts section {
+    margin: 15px 0;
+}
+
+.Coffee_Desserts section div {
+    gap: 10px;
+}
+
+.Coffee_Desserts section div img[alt='Coffee Icon'] {
+    width: 46px;
+    height: 46px;
+}
+
+.Coffee_Desserts section div img[alt='Dessert Icon'] {
+    width: 40px;
+    height: 40px;
+}
+
+.Beverage {
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+footer {
+    margin-bottom: 15px;
+}
+
+footer h5 a:hover {
+    color: var(--Brown);
+}
+
+/* Media Queries Styles */
+
+/* x-sm */
+@media (width <=512px) {}
+
+/* sm */
+@media (512px < width <=640px) {}
+
+/* md */
+@media (640px < width <=768px) {}
+
+/* lg */
+@media (768px < width <=1010px) {}
+
+/* xl */
+@media (1010px < width <=1400px) {}
+
+/* 2xl */
+@media (width > 1400px) {}

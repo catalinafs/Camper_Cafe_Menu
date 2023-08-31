@@ -34,7 +34,8 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 15px 0;
     background-image: url(../images/coffee.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -97,19 +98,69 @@ footer h5 a:hover {
 /* Media Queries Styles */
 
 /* x-sm */
-@media (width <=512px) {}
+@media (width <=512px) {
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .Coffee_Desserts {
+        text-align: left;
+    }
+
+    .Coffee_Desserts section div img[alt='Coffee Icon'] {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .Coffee_Desserts section div img[alt='Dessert Icon'] {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: medium;
+    }
+}
 
 /* sm */
-@media (512px < width <=640px) {}
+@media (512px < width <=640px) {
+    main {
+        width: 90%;
+    }
+}
 
 /* md */
-@media (640px < width <=768px) {}
+@media (640px < width <=768px) {
+    main {
+        width: 65%;
+    }
+}
 
 /* lg */
-@media (768px < width <=1010px) {}
+@media (768px < width <=1010px) {
+    main {
+        width: 65%;
+    }
+}
 
 /* xl */
-@media (1010px < width <=1400px) {}
+@media (1010px < width <=1400px) {
+    main {
+        width: 40%;
+    }
+}
 
 /* 2xl */
-@media (width > 1400px) {}
+@media (width > 1400px) {
+    main {
+        width: 650px;
+    }
+}

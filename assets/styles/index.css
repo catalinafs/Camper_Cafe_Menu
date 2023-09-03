@@ -132,8 +132,34 @@ footer h5 a:hover {
 
 /* sm */
 @media (512px < width <=640px) {
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
     main {
         width: 90%;
+    }
+
+    .Coffee_Desserts {
+        text-align: left;
+    }
+
+    .Coffee_Desserts section div img[alt='Coffee Icon'] {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .Coffee_Desserts section div img[alt='Dessert Icon'] {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: medium;
     }
 }
 
